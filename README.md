@@ -9,7 +9,7 @@ require_once('vendor/autoload.php');
 
 use proxier/ProxySearcher;
 
-$proxy = new ProsySearcher();
+$proxy = new ProxySearcher();
 $proxies = $proxy->run();
 var_dump($proxies);
 
