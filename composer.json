@@ -1,7 +1,11 @@
 {
   "name": "kubrey/proxier",
   "description": "Parsing free proxy lists",
-  "keywords":"proxy parse free list",
+  "keywords": [
+    "proxy",
+    "parser",
+    "free list"
+  ],
   "license": "MIT",
   "authors": [
     {
