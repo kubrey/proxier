@@ -22,7 +22,7 @@ class ProxySearcher
      * @return array
      */
     public function run() {
-        $sites = array('ProxitoryCom' => true, 'UsProxyOrg' => true, 'PublicProxyServersCom' => true);
+        $sites = array('ProxitoryCom' => true, 'UsProxyOrg' => true, 'PublicProxyServersCom' => true,'ProxylistMe'=>true);
         foreach ($this->options as $key => $optVal) {
             if (in_array($key, $sites) && !$optVal) {
                 $sites[$key] = false;
