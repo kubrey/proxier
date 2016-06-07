@@ -6,6 +6,7 @@ use proxier\BaseSiteCom;
 use proxier\sites\ProxitoryCom;
 use proxier\sites\UsProxyOrg;
 use proxier\sites\PublicProxyServersCom;
+use proxier\sites\ProxyListeDe;
 
 
 class ProxySearcher
@@ -22,7 +23,7 @@ class ProxySearcher
      * @return array
      */
     public function run() {
-        $sites = array('ProxitoryCom' => true, 'UsProxyOrg' => true, 'PublicProxyServersCom' => true,'ProxylistMe'=>true);
+        $sites = array('ProxitoryCom' => true, 'UsProxyOrg' => true, 'PublicProxyServersCom' => true, 'ProxylistMe' => true,'ProxyListeDe' => true);
         foreach ($this->options as $key => $optVal) {
             if (in_array($key, $sites) && !$optVal) {
                 $sites[$key] = false;
