@@ -20,10 +20,11 @@ class ProxySearcher
     }
 
     /**
+     * @param array $sitesSet
      * @return array
      */
-    public function run() {
-        $sites = array('ProxitoryCom' => true, 'UsProxyOrg' => true, 'PublicProxyServersCom' => true, 'ProxylistMe' => true,'ProxyListeDe' => true);
+    public function run($sitesSet = array()) {
+        $sites =  $sitesSet ? $sitesSet : array('ProxitoryCom' => true, 'UsProxyOrg' => true, 'PublicProxyServersCom' => true, 'ProxylistMe' => true,'ProxyListeDe' => true);
         foreach ($this->options as $key => $optVal) {
             if (in_array($key, $sites) && !$optVal) {
                 $sites[$key] = false;
