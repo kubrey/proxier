@@ -15,7 +15,7 @@ class HideMyAssCom extends BaseSiteCom
 
     protected $config = array('baseUrl' => 'http://proxylist.hidemyass.com/');
 
-    protected $inlineCss = [];
+    protected $inlineCss = array();
 
     public function parse() {
         $this->lastPage = 7;
