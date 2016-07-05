@@ -93,7 +93,7 @@ class HideMyAssCom extends BaseSiteCom
                     }
 
                     $ip = '';
-                    $allowed = ['span', 'div', '#text'];
+                    $allowed = array('span', 'div', '#text');
 
                     while ($span->hasChildNodes()) {
                         $child = $span->firstChild;
