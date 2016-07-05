@@ -63,8 +63,7 @@ class ProxitoryCom extends BaseSiteCom
     }
 
     protected function parsePaging() {
-        $pagingId = "paging";
-        $this->curlInit($this->config['baseUrl']);
+        $pagingId = "paging"; $this->curlInit($this->config['baseUrl']);
         $this->runCurl();
         if ($this->curlError) {
             return false;
@@ -85,6 +84,7 @@ class ProxitoryCom extends BaseSiteCom
         unset($dom);
         unset($paging);
         return $this;
+
     }
 
 }
